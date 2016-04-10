@@ -9,12 +9,20 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.scene.shape.*;
 
-
-public class beanMachine extends Application {
+public class beanPlay extends Application {
 	@Override // Override the start method in the Application class
 	public void start(Stage primaryStage) {
 		// Create a pane
 		Pane pane = new Pane();
+
+		// mouse event for trigger the animatiton of the bean
+		pane.setOnMouseClicked(e -> {
+
+			// new a bean：circle with x, y and radius
+			Circle bean = new Circle(250,50,4);
+			pane.getChildren().add(bean);
+
+		});
 
 		//create an outline
 		Polyline polyline = new Polyline();
