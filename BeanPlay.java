@@ -9,7 +9,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.scene.shape.*;
 
-public class beanPlay extends Application {
+public class BeanPlay extends Application {
 	@Override // Override the start method in the Application class
 	public void start(Stage primaryStage) {
 		// Create a pane
